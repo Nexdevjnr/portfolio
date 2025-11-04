@@ -3,10 +3,272 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Léo Khatchatourian - Développeur Full-Stack</title>
+    <title>Léo Khatchatourian - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <!-- Sidebar Profile -->
+      <aside class="profile-section">
+        <img
+          src="images/1761866717078.webp"
+          alt="Léo Khatchatourian"
+          class="profile-image"
+        />
+
+        <h1 class="profile-name">Léo Khatchatourian</h1>
+
+        <div class="profile-badges">
+          <span class="badge badge-dev">
+            <img src="images/terminal.svg" alt="Code" class="badge-icon" />
+            Développeur Full-Stack
+          </span>
+        </div>
+
+        <div class="location">
+          <img src="images/map-pin.svg" alt="Location" class="location-icon" />
+          Nîmes, FRANCE
+        </div>
+
+        <a href="CV-Leo.pdf" class="btn-download-cv" download>
+          <img src="images/file-down.svg" alt="Download" class="cv-icon" />
+          <span class="cv-text">Télécharger mon CV</span>
+          <img src="images/arrow-right.svg" alt="Arrow" class="cv-arrow" />
+        </a>
+
+        <p class="profile-description">
+          Besoin d'un développeur ? Quelle que soit votre techno, je m'adapte
+          rapidement pour livrer des solutions qui fonctionnent.
+        </p>
+
+        <div class="skills-container">
+          <div class="skill-tag">JavaScript</div>
+          <div class="skill-tag">React.js</div>
+          <div class="skill-tag">Node.js</div>
+          <div class="skill-tag">Next.js</div>
+          <div class="skill-tag">TypeScript</div>
+          <div class="skill-tag">Strapi</div>
+          <div class="skill-tag">PostgreSQL</div>
+          <div class="skill-tag">Tailwind</div>
+          <div class="skill-tag">Golang</div>
+          <div class="skill-tag">Docker</div>
+          <div class="skill-tag">Stripe</div>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/Nexdevjnr"
+            target="_blank"
+            class="social-link"
+            title="GitHub"
+          >
+            <img
+              src="images/github-icon.svg"
+              alt="GitHub"
+              class="social-icon"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/léo-khatchatourian"
+            target="_blank"
+            class="social-link"
+            title="LinkedIn"
+          >
+            <img src="images/linkdin.svg" alt="LinkedIn" class="social-icon" />
+          </a>
+        </div>
+      </aside>
+
+      <!-- Projects Section -->
+      <main class="projects-section" id="projets">
+        <!-- Navigation Desktop (Fixed) -->
+        <nav class="top-nav">
+          <a href="#projets-section" class="nav-item">
+            <img src="images/code.svg" alt="Projects" class="icon" />
+            Projets
+          </a>
+          <a href="#experiences-section" class="nav-item">
+            <img src="images/briefcase.svg" alt="Experience" class="icon" />
+            Expériences
+          </a>
+        </nav>
+
+        <!-- Scrollable Content -->
+        <div class="projects-content">
+          <h2 class="section-title" id="projets-section">
+            Mes projets les plus marquants
+          </h2>
+
+          <div class="projects-grid">
+            <!-- Maesha E-commerce -->
+            <article class="project-card">
+              <div class="project-header">
+                <div class="project-badges">
+                  <a
+                    href="https://github.com/Nexdevjnr/Maesha-frontend"
+                    target="_blank"
+                    class="badge-code"
+                    >&lt;/&gt; Code Frontend</a
+                  >
+                  <a
+                    href="https://github.com/Nexdevjnr/Maesha-backend-cms"
+                    target="_blank"
+                    class="badge-code"
+                    >&lt;/&gt; Code Backend</a
+                  >
+                </div>
+                <div class="project-date">
+                  <img
+                    src="images/folder-clock.svg"
+                    alt="Date"
+                    class="date-icon"
+                  />
+                  Créé en janvier 2025
+                </div>
+              </div>
+
+              <img
+                src="/images/screen-maesha-2.webp"
+                alt="Maesha E-commerce"
+                class="project-preview"
+              />
+
+              <h3 class="project-title">Maesha E-commerce</h3>
+
+              <p class="project-description">
+                Plateforme e-commerce développée pour un client, avec paiement
+                Stripe, gestion automatisée des commandes (emails, webhooks) et
+                hébergement médias via Cloudinary. Déployée en production sur
+                Railway.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-tag">Next.js 15</span>
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">Strapi v4</span>
+                <span class="tech-tag">Stripe</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Cloudinary</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+
+              <a
+                href="https://maesha-ecom-production.up.railway.app/"
+                target="_blank"
+                class="btn-see-site"
+              >
+                🔗 Voir le site
+              </a>
+            </article>
+
+            <!-- GreenRoots -->
+            <article class="project-card">
+              <div class="project-header">
+                <div class="project-badges">
+                  <a
+                    href="https://github.com/Nexdevjnr/greenroots-frontend"
+                    target="_blank"
+                    class="badge-code"
+                    >&lt;/&gt; Code Frontend</a
+                  >
+                  <a
+                    href="https://github.com/Nexdevjnr/greenroots-backend"
+                    target="_blank"
+                    class="badge-code"
+                    >&lt;/&gt; Code Backend</a
+                  >
+                </div>
+                <div class="project-date">
+                  <img
+                    src="images/folder-clock.svg"
+                    alt="Date"
+                    class="date-icon"
+                  />
+                  Créé en janvier 2025
+                </div>
+              </div>
+
+              <img
+                src="/images/greenroots.webp"
+                alt="GreenRoots"
+                class="project-preview"
+              />
+
+              <h3 class="project-title">GreenRoots</h3>
+
+              <p class="project-description">
+                Plateforme de vente d'arbres avec React et Node.js. Backend
+                sécurisé avec helmet, rate limiting, validation XSS, et
+                authentification JWT. Architecture MVC complète.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+
+              <a
+                href="https://github.com/Nexdevjnr/greenroots-frontend"
+                target="_blank"
+                class="btn-see-site"
+              >
+                🔗 Voir le code
+              </a>
+            </article>
+          </div>
+
+          <!-- Experiences Section -->
+          <div class="experiences-wrapper">
+            <h2 class="section-title" id="experiences-section">
+              Mes Expériences
+            </h2>
+
+            <div class="experiences-grid">
+              <!-- Experience 1 -->
+              <article class="experience-card">
+                <div class="experience-header">
+                  <div class="experience-company">
+                    <div class="company-info">
+                      <h3 class="experience-title">
+                        Développeur Full-Stack (Stage)
+                      </h3>
+                      <p class="company-name">Entreprise B2B</p>
+                    </div>
+                  </div>
+                  <div class="experience-period">
+                    <img
+                      src="images/calendar.svg"
+                      alt="Calendar"
+                      class="period-icon"
+                    />
+                    2024
+                  </div>
+                </div>
+
+                <p class="experience-description">
+                  Application B2B mobile pour l'import de produits agricoles.
+                  Frontend React Native, backend Golang avec Clean Architecture.
+                  API RESTful robuste pour la gestion des flux d'import en temps
+                  réel.
+                </p>
+
+                <div class="experience-tech">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Golang</span>
+                  <span class="tech-tag">Clean Architecture</span>
+                  <span class="tech-tag">REST API</span>
+                  <span class="tech-tag">B2B</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
