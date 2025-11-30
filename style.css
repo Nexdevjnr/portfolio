@@ -147,7 +147,6 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #ffd700;
   object-fit: cover;
   margin-bottom: 20px;
 }
